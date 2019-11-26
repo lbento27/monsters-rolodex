@@ -43,6 +43,8 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1>Monsters Rolodex</h1>
+
         {/* Search- moved to its own component */}
         <SearchBox
           placeholder="search monsters"
