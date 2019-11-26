@@ -24,6 +24,12 @@ class App extends Component {
       .then(users => this.setState({ monsters: users })); //set our monsters to that response array of users
   }
 
+  //my method, we need to use arrow func, so 'this' reference to the component
+
+  handleChange = e => {
+    this.setState({ searchField: e.target.value });
+  };
+
   render() {
     const {
       monsters,
@@ -40,9 +46,8 @@ class App extends Component {
         {/* Search- moved to its own component */}
         <SearchBox
           placeholder="search monsters"
-          handleChange={e => this.setState({ searchField: e.target.value })}
+          handleChange={this.handleChange}
         />
-        {/* //(code when it was in app.js) onchange comes with react JSX and fires when input is change and gives us a big object e, but the most used ones are target, get and set, then this will gives back the html element, then we want the value of that html element, the string we type in the search box*/}
 
         {/* use component made by me and pass truth props and props.children */}
         <CardList monsters={filteredMonsters}>
