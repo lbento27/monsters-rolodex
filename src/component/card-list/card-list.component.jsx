@@ -4,6 +4,7 @@ import { Card } from "../card/card.component";
 
 import "./card-list.styles.css"; //import css
 // className"card-list" comes form the css
+
 export const CardList = props => {
   return (
     <div className="card-list">
