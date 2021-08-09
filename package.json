@@ -4,9 +4,15 @@
   "private": true,
   "homepage": "https://lbento27.github.io/monsters-rolodex",
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^3.2.0"
+    "browserslist": "^4.16.5",
+    "glob-parent": "^5.1.2",
+    "immer": "^8.0.1",
+    "node-notifier": "^8.0.1",
+    "postcss": "^8.3.6",
+    "react": "^17.0.2",
+    "react-dev-utils": "^11.0.4",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
